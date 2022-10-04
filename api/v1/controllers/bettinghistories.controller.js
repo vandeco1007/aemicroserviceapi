@@ -4,10 +4,14 @@ const e = require('express')
 
 
 module.exports = {
-    bettinghistory: async (req,res,next)=>{
+    bettinghistoryDemo: async(req,res,next)=>{
         let{...paragam} = req.query
         var paragamValue = paragamItems(paragam)
-        var baseurl = ['https://boapi.jun88.bet/jun88-ims/api/v1/reports/betting?']
+    }
+    ,bettinghistory: async (req,res,next)=>{
+        let{...paragam} = req.query
+        let paragamValue = paragamItems(paragam)
+        let baseurl = ['https://boapi.jun88.bet/jun88-ims/api/v1/reports/betting?']
         for (const val of Object.values(paragamValue)) {
             baseurl[0]+=val
         }

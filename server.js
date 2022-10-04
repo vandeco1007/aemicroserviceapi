@@ -4,6 +4,8 @@ const Router = require('./api/v1/routers')
 const cookieParser = require('cookie-parser')
 const connectDB = require('./api/v1/config/database')
 const asyncHandler = require('./api/v1/middlewares/asynchandle.middleware')
+const hostname = "14.225.205.154"
+const port = 3000;
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
@@ -19,8 +21,7 @@ app.get('/',(req,res,next)=>{
     res.render('index')
 })
 
-app.listen(3000, ()=>{
+app.listen(port, hostname, ()=>{
     console.log("App's running at port 3000")
 })
 
-// 10.19.0~dfsg-3ubuntu1
