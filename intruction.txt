@@ -1,0 +1,49 @@
+//betting history paragam
+
+dateFrom:2022-10-03
+dateTo:2022-10-03
+endtime:1664812799999
+jpbetinequality:1
+jpwininequality:1
+key:1664773877360
+limit:25
+offset:0
+searchtime:<txntime/resulttime>
+sort:DESC
+sortcolumn:txntime
+starttime:<startTime>
+roundid=<roundId>
+ticketid=<ticketId>
+ulagent=<agent/ulagent/affiliate>
+agentid=<agentId>
+state:0
+state:1
+state:6
+state:5
+state:2
+state:8
+tipinequality:( 1: >=, 2:<=)
+tip:<tip>
+
+
+jpbet:14
+jpbetinequality:2
+jpwin:15
+jpwininequality:1
+stake:1
+stakeinequality:1
+tip:13
+tipinequality:2
+validbet:11
+validbetinequality:( 1: >=, 2:<=)
+winloss:12
+winlossinequality:( 1: >=, 2:<=)
+producttype:<productType>
+playerid:<playerId>
+gameprovider:<provider>
+gamegroup:<gameGroup>
+gamename:<gameName>
+zoneType:ASIA_SHANGHAI
+
+https://boapi.jun88.bet/jun88-ims/api/v1/reports/betting?dateFrom=2022-10-03&dateTo=2022-10-03&endtime=1664812799999&jpbetinequality=1&jpwininequality=1&key=1664798369319&limit=25&offset=0&searchtime=txntime&sort=DESC&sortcolumn=txntime&stake=111&stakeinequality=2&starttime=1664726400000&state=0&state=1&state=6&state=5&state=2&state=8&tipinequality=1&validbetinequality=1&winlossinequality=1&zoneType=ASIA_SHANGHAI
+https://boapi.jun88.bet/jun88-ims/api/v1/reports/betting?dateFrom=2022-10-03&dateTo=2022-10-03&endtime=1664812799999&jpbetinequality=1&jpwininequality=1&key=1664798388342&limit=25&offset=0&searchtime=resulttime&sort=DESC&sortcolumn=resulttime&stake=111&stakeinequality=2&starttime=1664726400000&state=0&state=1&state=6&state=5&state=2&state=8&tipinequality=1&validbetinequality=1&winlossinequality=1&zoneType=ASIA_SHANGHAI
