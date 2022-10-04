@@ -1,13 +1,11 @@
 const express = require('express')
 const router = express.Router()
 const {
-    APIlogin,
-    getAccount
-} = require('../controllers/account.controller')
+    test
+} = require('../controllers/test.controller')
 
 router
 .route('/')
-.post(APIlogin)
-.get(getAccount)
+.get(test)
 
 module.exports = router
