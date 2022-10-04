@@ -15,7 +15,6 @@ module.exports = {
         let authorize = await authorization()
         var config = {
             method: 'get',
-            // url:baseUrl[0],
             url: baseurl[0],
             headers: { 
                 'accept': ' */*', 
@@ -43,6 +42,7 @@ module.exports = {
         .catch(function (error) {
         console.log(error);
         });
+        
     }
 }
 
