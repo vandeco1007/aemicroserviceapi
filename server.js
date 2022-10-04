@@ -19,8 +19,8 @@ app.get('/',(req,res,next)=>{
     res.render('index')
 })
 
-app.listen(5000, ()=>{
-    console.log("App's running at port 5000")
+app.listen(3000, ()=>{
+    console.log("App's running at port 3000")
 })
 
 // 10.19.0~dfsg-3ubuntu1
