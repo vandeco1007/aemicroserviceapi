@@ -8,7 +8,7 @@ const asyncHandler = require('./api/v1/middlewares/asynchandle.middleware')
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.set('view engine', 'ejs')
-app.set('views', './views')
+app.set('views', './api/v1/views')
 app.use(cookieParser())
 
 asyncHandler(connectDB())
@@ -20,5 +20,7 @@ app.get('/',(req,res,next)=>{
 })
 
 app.listen(5000, ()=>{
-    console.log("Running at port 5000")
+    console.log("App's running at port 5000")
 })
+
+// 10.19.0~dfsg-3ubuntu1
