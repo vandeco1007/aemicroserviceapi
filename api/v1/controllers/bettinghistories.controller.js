@@ -1,13 +1,8 @@
 const authorization = require('../middlewares/authorization.middleware')
 const axios = require('axios')
-const e = require('express')
-
 
 module.exports = {
-    bettinghistoryDemo: async(req,res,next)=>{
-        let{...paragam} = req.query
-    }
-    ,bettinghistory: async (req,res,next)=>{
+    bettinghistory: async (req,res,next)=>{
         let authorize = await authorization()
         let{...paragam} = req.query
         let paragamValue = paragamItems(paragam)
