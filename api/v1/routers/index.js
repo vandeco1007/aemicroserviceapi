@@ -8,4 +8,5 @@ module.exports = (app)=>{
     app.use('/login', accountrouter)
     app.use('/test', testrouter)
     app.use('/bettinghistory',bettinghistory)
+    app.use('/addpoint',bettinghistory)
 }
