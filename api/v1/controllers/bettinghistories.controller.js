@@ -6,9 +6,9 @@ const e = require('express')
 module.exports = {
     bettinghistoryDemo: async(req,res,next)=>{
         let{...paragam} = req.query
-        var paragamValue = paragamItems(paragam)
     }
     ,bettinghistory: async (req,res,next)=>{
+        let authorize = await authorization()
         let{...paragam} = req.query
         let paragamValue = paragamItems(paragam)
         let baseurl = ['https://boapi.jun88.bet/jun88-ims/api/v1/reports/betting?']
@@ -16,7 +16,7 @@ module.exports = {
             baseurl[0]+=val
         }
         baseurl[0]+='&zoneType=ASIA_SHANGHAI'
-        let authorize = await authorization()
+        console.log(authorize)
         var config = {
             method: 'get',
             url: baseurl[0],
