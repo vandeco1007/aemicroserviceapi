@@ -5,7 +5,7 @@ const axios = require('axios')
 module.exports = {
     test: async(req, res, next) =>{
         res.json({
-            message:"You got me"
+            message:"It's changed"
         })
     }
 }
