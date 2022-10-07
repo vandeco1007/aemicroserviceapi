@@ -26,7 +26,7 @@ app.get('/',(req,res,next)=>{
     res.render('index')
 })
 
-app.listen(port, hostname, ()=>{
+app.listen(3000, ()=>{
     console.log("App's running at port 3000")
 })
 
