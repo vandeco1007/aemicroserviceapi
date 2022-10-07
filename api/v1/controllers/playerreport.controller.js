@@ -31,7 +31,7 @@ module.exports = {
             res.json(response.data)
         })
         .catch(function (error) {
-        console.log(error);
+            res.json(error);
         });
     }
 }
