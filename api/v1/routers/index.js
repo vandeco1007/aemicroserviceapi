@@ -6,6 +6,7 @@ const playerReport = require('./playerreport.router')
 const manualadjusts = require('./manualadjusts.router')
 const addpoint = require('./addpoint.router')
 const testrouter = require('./test.router')
+const rebateRouter = require('./rebate.router')
 
 module.exports = (app)=>{
     app.use('/login', accountrouter)
@@ -13,5 +14,6 @@ module.exports = (app)=>{
     app.use('/bettinghistory',bettinghistory)
     app.use('/playerreport',playerReport)
     app.use('/manualadjusts',manualadjusts)
+    app.use('/rebate',rebateRouter)
     app.use('/addpoint',addpoint)
 }
