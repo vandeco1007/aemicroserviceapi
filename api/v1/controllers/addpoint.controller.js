@@ -22,10 +22,13 @@ module.exports = {
     
     axios(config)
     .then(function (response) {
-      res.json(response.data);
+      res.json({
+        code:200,
+        mess:"success"
+      });
     })
     .catch(function (error) {
-      console.log(error);
+      res.json(error);
     });
     }
 }

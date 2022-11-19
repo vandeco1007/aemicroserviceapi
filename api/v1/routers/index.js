@@ -6,6 +6,7 @@ const playerReport = require('./playerreport.router')
 const manualadjusts = require('./manualadjusts.router')
 const addpoint = require('./addpoint.router')
 const testrouter = require('./test.router')
+const promotionRule = require('./promotionRule.router')
 const rebateRouter = require('./rebate.router')
 
 module.exports = (app)=>{
@@ -15,5 +16,6 @@ module.exports = (app)=>{
     app.use('/playerreport',playerReport)
     app.use('/manualadjusts',manualadjusts)
     app.use('/rebate',rebateRouter)
+    app.use('/rule',promotionRule)
     app.use('/addpoint',addpoint)
 }
