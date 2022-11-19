@@ -36,7 +36,7 @@ module.exports = {
 
         axios(config)
         .then(function (response) {
-            res.json(response.data,promotionrul)
+            res.json(response.data)
         })
         .catch(function (error) {
         console.log(error);
